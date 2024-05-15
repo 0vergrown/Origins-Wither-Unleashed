@@ -1,0 +1,12 @@
+{
+    "entity_types": [
+        "minecraft:wither"
+    ],
+    "powers": [
+        "wither_unleashed:wither/heart_of_the_nether",
+        "wither_unleashed:wither/nether_blitz",
+        "wither_unleashed:wither/skeleton_summoning",
+        "wither_unleashed:wither/cataclysmic_demise"
+    ],
+    "order": 1
+}

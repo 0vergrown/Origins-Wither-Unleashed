@@ -1,0 +1,12 @@
+{
+    "name":"Nether Blast",
+    "description":"This enhanced attack deals 25% more knockback.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_knockback",
+		"operation": "multiply_total",
+        "value": 1.25,
+		"name": "Max Attack Knockback Increase"
+    },
+	"update_health": false
+}

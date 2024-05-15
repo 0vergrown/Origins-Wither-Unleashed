@@ -1,0 +1,15 @@
+{
+    "name":"Cataclysmic Demise",
+    "description":"In its final throes, the Wither unleashes a massive explosion.",
+    "type": "origins:action_on_death",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:explode",
+            "power": 2,
+            "destruction_type": "break",
+            "damage_self": false,
+            "create_fire": false
+        }
+    }
+}

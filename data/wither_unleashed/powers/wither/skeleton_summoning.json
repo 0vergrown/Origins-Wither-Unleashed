@@ -1,0 +1,319 @@
+{
+    "name":"Skeleton Summoning",
+    "description":"When weakened to 500 health or less, the Wither taps into its necromantic powers to summon an entourage of Wither Skeletons.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:wither_skeleton",
+                "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                "entity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:spawn_particles",
+                            "particle":"minecraft:soul_fire_flame",
+                            "count": 25,
+                            "speed": 0.1,
+                            "force": true,
+                            "spread": {
+                                "x": 0.2,
+                                "y": 0.2,
+                                "z": 0.2
+                            },
+                            "offset_y": 0.5
+                        },
+                        {    
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.wither.shoot",
+                            "volume": 1.00,
+                            "pitch": 0.50
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "minecraft:wither_skeleton",
+                    "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                    "entity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle":"minecraft:soul_fire_flame",
+                                "count": 25,
+                                "speed": 0.1,
+                                "force": true,
+                                "spread": {
+                                    "x": 0.2,
+                                    "y": 0.2,
+                                    "z": 0.2
+                                },
+                                "offset_y": 0.5
+                            },
+                            {    
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.wither.shoot",
+                                "volume": 1.00,
+                                "pitch": 0.50
+                            }
+                        ]
+                    }
+                },
+                "ticks": 20
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "minecraft:wither_skeleton",
+                    "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                    "entity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle":"minecraft:soul_fire_flame",
+                                "count": 25,
+                                "speed": 0.1,
+                                "force": true,
+                                "spread": {
+                                    "x": 0.2,
+                                    "y": 0.2,
+                                    "z": 0.2
+                                },
+                                "offset_y": 0.5
+                            },
+                            {    
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.wither.shoot",
+                                "volume": 1.00,
+                                "pitch": 0.50
+                            }
+                        ]
+                    }
+                },
+                "ticks": 40
+            }
+        ]
+    },
+    "rising_action":{
+        "type": "origins:and",
+        "actions": [
+            {
+                "type":"origins:execute_command",
+                "command":"team add bedrock_wither"
+             },
+             {
+                "type":"origins:execute_command",
+                "command":"team join bedrock_wither @s"
+             },
+             {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:wither_skeleton",
+                "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                "entity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:spawn_particles",
+                            "particle":"minecraft:soul_fire_flame",
+                            "count": 25,
+                            "speed": 0.1,
+                            "force": true,
+                            "spread": {
+                                "x": 0.2,
+                                "y": 0.2,
+                                "z": 0.2
+                            },
+                            "offset_y": 0.5
+                        },
+                        {    
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.wither.shoot",
+                            "volume": 1.00,
+                            "pitch": 0.50
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "minecraft:wither_skeleton",
+                    "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                    "entity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle":"minecraft:soul_fire_flame",
+                                "count": 25,
+                                "speed": 0.1,
+                                "force": true,
+                                "spread": {
+                                    "x": 0.2,
+                                    "y": 0.2,
+                                    "z": 0.2
+                                },
+                                "offset_y": 0.5
+                            },
+                            {    
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.wither.shoot",
+                                "volume": 1.00,
+                                "pitch": 0.50
+                            }
+                        ]
+                    }
+                },
+                "ticks": 20
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "minecraft:wither_skeleton",
+                    "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                    "entity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle":"minecraft:soul_fire_flame",
+                                "count": 25,
+                                "speed": 0.1,
+                                "force": true,
+                                "spread": {
+                                    "x": 0.2,
+                                    "y": 0.2,
+                                    "z": 0.2
+                                },
+                                "offset_y": 0.5
+                            },
+                            {    
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.wither.shoot",
+                                "volume": 1.00,
+                                "pitch": 0.50
+                            }
+                        ]
+                    }
+                },
+                "ticks": 40
+            }
+        ]
+    },
+    "falling_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:wither_skeleton",
+                "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                "entity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:spawn_particles",
+                            "particle":"minecraft:soul_fire_flame",
+                            "count": 25,
+                            "speed": 0.1,
+                            "force": true,
+                            "spread": {
+                                "x": 0.2,
+                                "y": 0.2,
+                                "z": 0.2
+                            },
+                            "offset_y": 0.5
+                        },
+                        {    
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.wither.shoot",
+                            "volume": 1.00,
+                            "pitch": 0.50
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "minecraft:wither_skeleton",
+                    "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                    "entity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle":"minecraft:soul_fire_flame",
+                                "count": 25,
+                                "speed": 0.1,
+                                "force": true,
+                                "spread": {
+                                    "x": 0.2,
+                                    "y": 0.2,
+                                    "z": 0.2
+                                },
+                                "offset_y": 0.5
+                            },
+                            {    
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.wither.shoot",
+                                "volume": 1.00,
+                                "pitch": 0.50
+                            }
+                        ]
+                    }
+                },
+                "ticks": 20
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "minecraft:wither_skeleton",
+                    "tag": "{Team:\"bedrock_wither\",HandItems:[{id:stone_sword,Count:1},{}]}",
+                    "entity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle":"minecraft:soul_fire_flame",
+                                "count": 25,
+                                "speed": 0.1,
+                                "force": true,
+                                "spread": {
+                                    "x": 0.2,
+                                    "y": 0.2,
+                                    "z": 0.2
+                                },
+                                "offset_y": 0.5
+                            },
+                            {    
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.wither.shoot",
+                                "volume": 1.00,
+                                "pitch": 0.50
+                            }
+                        ]
+                    }
+                },
+                "ticks": 40
+            }
+        ]
+    },
+    "interval": 400,
+    "condition": {
+        "type": "origins:health",
+        "comparison": "<=",
+        "compare_to": 500
+    }
+}

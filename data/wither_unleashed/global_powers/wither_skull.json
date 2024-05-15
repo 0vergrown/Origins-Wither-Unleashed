@@ -1,0 +1,9 @@
+{
+    "entity_types": [
+        "minecraft:wither_skull"
+    ],
+    "powers": [
+        "wither_unleashed:wither_skull/nether_blast"
+    ],
+    "order": 1
+}
