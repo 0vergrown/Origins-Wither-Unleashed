@@ -13,8 +13,36 @@ This datapack requires the following to function properly:
 - [Origins Mod](https://github.com/apace100/origins-fabric) - A Minecraft mod that allows you to choose an Origin at the beginning, granting various abilities and drawbacks.
 
 ## Features
-- Enhances the Wither boss with new abilities, making it harder to fight.
-- Increases the knockback of Wither skulls by 25%.
+
+### Cataclysmic Demise
+- **Functionality**: On death, the Wither now triggers a substantial explosion.
+- **Implementation**:
+  - **Action**: `origins:action_on_death`
+  - **Parameters**: Explosion of power level 2, destruction type set to "break", without self-damage or fire.
+
+### Heart of the Nether
+- **Functionality**: The Wither's max health is boosted to a remarkable total of 600 hearts.
+- **Implementation**:
+  - **Attribute Modification**: Increase of 300 to max health.
+  - **Modifier Details**: Applied as an addition operation on `minecraft:generic.max_health`.
+
+### Nether Blitz
+- **Functionality**: Periodically, the Wither executes a high-speed dash that generates a shockwave, inflicting Wither effect, blindness, and slowness.
+- **Implementation**:
+  - **Interval**: Every 600 ticks.
+  - **Composite Actions**: Combination of velocity addition, sound effects, particle effects, and an area effect that applies multiple impacts.
+
+### Skeleton Summoning
+- **Functionality**: When health drops below 500, the Wither summons Wither Skeletons, each carrying a stone sword and belonging to a predefined team.
+- **Implementation**:
+  - **Condition**: Health ≤ 500.
+  - **Actions**: Sequential entity spawning with integrated delay and special effects, reinforcing thematic consistency with soul fire flame particles and characteristic sounds.
+
+### Nether Blast
+- **Functionality**: Wither Skulls fired by the Wither now deliver 25% more knockback.
+- **Implementation**:
+  - **Attribute Modification**: Knockback attribute of the skulls enhanced by multiplying the total by 1.25.
+  - **Effect Details**: Specifically modifies `minecraft:generic.attack_knockback`.
 
 ## Installation
 To install the Origins: Wither Unleashed datapack, follow these steps:
